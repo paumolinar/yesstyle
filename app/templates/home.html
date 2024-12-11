@@ -11,6 +11,7 @@
     <h1>Productos</h1>
     <ul>
       {% for product in products %}
+      <img src="{{ product.image.url }}"/>
       <li>{{ product.brand }} - {{ product.name }}</li>
       {% endfor %}
     </ul>
