@@ -11,12 +11,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" />
   </head>
   <body>
     <img src="{% static 'img/yesstyle_logo.svg' %}" alt="Logo" />
     <h1>Productos</h1>
     <div class="container">
-      <div class="productList" style="display: flex; flex-wrap: wrap">
+      <div class="productList">
         {% for product in products %}
         <div class="card" style="width: 18rem">
           <img
