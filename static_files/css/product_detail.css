@@ -1,0 +1,19 @@
+.section {
+    width: 50%;
+    background-color: white;
+}
+
+.product-description {
+    padding: 16px 30px 27px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    margin-inline-end: 7px;
+}
+
+.gray-text {
+    color: #999;
+    font-size: 12px;
+}

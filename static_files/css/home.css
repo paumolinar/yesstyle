@@ -3,6 +3,7 @@
   flex-wrap: wrap;
 }
 
-.card {
-  width: 18rem;
+.product-name{
+  height: 70px;
+  overflow: hidden;
 }

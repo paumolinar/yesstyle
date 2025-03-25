@@ -1,0 +1,104 @@
+body {
+  background-color: #dddddd;
+  font-family: "Lato", "DM-Serif-Display", "Helvetica", "Arial", "tahoma",
+    "Hiragino Maru Gothic Pro", "Microsoft YaHei", "Hiragino Sans GB",
+    "sans-serif";
+}
+
+.container {
+  min-width: 400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+}
+
+.main-header {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  min-height: inherit;
+  position: relative;
+  z-index: 51;
+}
+
+.tool-container {
+  padding: 12px 21px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-logo {
+  width: 100%;
+  text-align: center;
+}
+
+.top-bar-spacing {
+  padding-top: 94px;
+}
+
+.tools-right {
+  display: flex;
+}
+
+.tools-left {
+  display: flex;
+}
+
+.tool-icon {
+  margin-inline: 5px;
+  width: 40px;
+  height: 40px;
+  color: #666;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tool-icon svg {
+  fill: currentColor;
+}
+
+.nav-wrapper {
+  position: relative;
+  z-index: 50;
+  display: block;
+  height: 40px;
+  background-color: #fff;
+}
+
+.nav-wrapper nav {
+  display: flex;
+  position: relative;
+  z-index: inherit;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.nav-wrapper nav a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  position: relative;
+  z-index: inherit;
+  text-transform: uppercase;
+  height: 40px;
+  margin: 0 2px;
+  padding: 8px 11px;
+  font-size: 16px;
+  line-height: 16px;
+}

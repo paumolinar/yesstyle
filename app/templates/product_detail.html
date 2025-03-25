@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block tab_title %}Product detail{% endblock %}
+{% block title %}Product Detail{% endblock %}
+
+{% block head%}<link href="{% static 'css/product_detail.css' %}?version=1" rel="stylesheet" />{% endblock %} 
+
+{% block content %}
+<div style="display: flex">
+    <div class="section" style="    border-inline-end: 10px solid #dddddd;">
+        <img
+        src="{{ product.image.url }}"
+        class="card-img-top"
+        alt="Product Image"
+        /> 
+    </div>
+
+    <div class="section product-description">
+        <p>{{ product.brand }} - {{ product.name }}</p>
+        <p><strong class="price">US$ {{ product.price }}</strong></p>
+        {% if product.editor_note %}
+        <h4>Editor's Note</h4>
+        <p>{{ product.editor_note }}</p>
+        {% endif %}
+        {% if product.ingredients %}
+        <h4>Principal Ingredients</h4>
+        <p>{{ product.ingredients }}</p>
+        <p class="gray-text">La lista de ingredientes representa toda las opciones o variantes de este producto. 
+            Los ingredientes reales de un producto en particular pueden variar respecto a lo indicado en esta lista. 
+            Los ingredientes pueden cambiar por decisión del fabricante. Para obtener una lista 
+            completa y actualizada de los ingredientes, consulta el envase del producto.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+     
+
+
+
+
